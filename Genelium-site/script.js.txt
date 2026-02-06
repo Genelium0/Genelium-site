@@ -1,0 +1,70 @@
+// Мобильное меню
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+
+if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+}
+
+// FAQ аккордеон
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const item = question.parentElement;
+        item.classList.toggle('active');
+    });
+});
+
+// Плавная прокрутка
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 100,
+                behavior: 'smooth'
+            });
+            
+            // Закрываем мобильное меню
+            if (nav.classList.contains('active')) {
+                nav.classList.remove('active');
+            }
+        }
+    });
+});
+
+// Обработка формы
+const form = document.getElementById('consult-form');
+if (form) {
+    form.addEventListener('submit', function(e) {
+        // Можно добавить валидацию
+        const submitBtn = this.querySelector('.submit-btn');
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Отправка...';
+        submitBtn.disabled = true;
+        
+        // Форма отправится через FormSubmit.co
+        setTimeout(() => {
+            submitBtn.innerHTML = '<i class="fas fa-check"></i> Отправлено!';
+            setTimeout(() => {
+                submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Получить консультацию';
+                submitBtn.disabled = false;
+            }, 2000);
+        }, 1000);
+    });
+}
+
+// Анимация при прокрутке
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+        header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+    } else {
+        header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+    }
+});

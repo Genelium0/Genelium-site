@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genelium Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Хедер с навигацией -->
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="#"><strong>Genelium</strong></a>
+                </div>
+                <nav class="nav">
+                    <a href="#about">О команде</a>
+                    <a href="#portfolio">Работы</a>
+                    <a href="#faq">Вопросы</a>
+                    <a href="#pricing">Тарифы</a>
+                    <a href="https://t.me/Genelium" class="telegram-btn" target="_blank">
+                        <i class="fab fa-telegram"></i> Telegram
+                    </a>
+                </nav>
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="container">
+            <h1>Внедряем <span class="highlight">ИИ</span> в бизнес</h1>
+            <p class="subtitle">Мы помогаем малым, средним и крупным компаниям автоматизировать процессы, анализировать данные и увеличивать прибыль</p>
+            <a href="#consult" class="cta-button">Бесплатная консультация</a>
+        </div>
+    </section>
+
+    <!-- О команде -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>О нашей команде</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>8 лет опыта</h3>
+                    <p>В разработке и внедрении ИИ-решений</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>50+ проектов</h3>
+                    <p>Успешно реализованных</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>15 специалистов</h3>
+                    <p>В команде: Data Scientists, ML-инженеры, аналитики</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Портфолио -->
+    <section id="portfolio" class="section bg-gray">
+        <div class="container">
+            <h2>Наши работы</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <h3>Сеть ресторанов</h3>
+                    <p>Внедрили систему прогнозирования спроса. Снижение затрат на продукты на 25%.</p>
+                    <span class="tag">Малый бизнес</span>
+                </div>
+                <div class="portfolio-card">
+                    <h3>Логистическая компания</h3>
+                    <p>Оптимизация маршрутов доставки с помощью ИИ. Экономия 15% топлива.</p>
+                    <span class="tag">Средний бизнес</span>
+                </div>
+                <div class="portfolio-card">
+                    <h3>Производственный холдинг</h3>
+                    <p>Система прогнозного обслуживания оборудования. Снижение простоев на 40%.</p>
+                    <span class="tag">Крупный бизнес</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Вопросы -->
+    <section id="faq" class="section">
+        <div class="container">
+            <h2>Частые вопросы</h2>
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Сколько времени занимает внедрение ИИ?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        От 2 недель до 3 месяцев, в зависимости от сложности задачи.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Какие данные нужны для старта?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Достаточно исторических данных за 6-12 месяцев. Поможем собрать, если данных нет.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Какой бюджет нужен?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        От 150 000 руб. за MVP. Точную сумму назовем после анализа задачи.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Тарифы -->
+    <section id="pricing" class="section bg-gray">
+        <div class="container">
+            <h2>Тарифы</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Базовый</h3>
+                    <div class="price">от 150 000 ₽</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Анализ бизнес-процессов</li>
+                        <li><i class="fas fa-check"></i> Прототип решения</li>
+                        <li><i class="fas fa-check"></i> Техническое задание</li>
+                    </ul>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Про</h3>
+                    <div class="price">от 300 000 ₽</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Внедрение готового решения</li>
+                        <li><i class="fas fa-check"></i> Обучение сотрудников</li>
+                        <li><i class="fas fa-check"></i> Поддержка 3 месяца</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <h3>Бизнес</h3>
+                    <div class="price">индивидуально</div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Полный цикл разработки</li>
+                        <li><i class="fas fa-check"></i> Интеграция с 1С/CRM</li>
+                        <li><i class="fas fa-check"></i> Приоритетная поддержка</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма заявки -->
+    <section id="consult" class="section">
+        <div class="container narrow">
+            <div class="form-card">
+                <h2>Бесплатная консультация по внедрению ИИ</h2>
+                <p>Оставьте заявку, и наш архитектор ИИ-решений свяжется с вами в течение 2 часов</p>
+                
+                <form id="consult-form" action="https://formsubmit.co/dobrygini73@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Новая заявка с сайта Genelium">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="company" placeholder="Компания">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Телефон">
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Получить консультацию
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <a href="#"><strong>Genelium</strong></a>
+                </div>
+                <p>© 2024 Genelium Project. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
